@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>God of War: Ragnarok</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Horizon</title>
+    <link rel="stylesheet" href="assets/_css/jogo3.css">
 </head>
 
 <body>
@@ -58,13 +58,72 @@
         Cras sit amet nisi ut est sodales sagittis. Integer vel elementum est, ac mollis neque. Phasellus sagittis nulla
         quis odio mattis venenatis. Cras vitae diam luctus, tincidunt arcu ut, facilisis sem. Integer vehicula purus
         vitae nibh bibendum ullamcorper.</p>
-    <h2>Imagens</h2>
-    <img src="assets/_imagens/horizon-fw/horizon1.jpg" width="640" height="480" controls>
-    <img src="assets/_imagens/horizon-fw/horizon2.jpg" width="640" height="480" controls>
-    <img src="assets/_imagens/elden-ring/er3.jpg" width="640" height="480" controls>
-    <img src="assets/_imagens/horizon-fw/horizon4.jpg" width="640" height="480" controls>
-    <img src="assets/_imagens/horizon-fw/horizon5.jpg" width="640" height="480" controls>
-
-</body>
-
-</html>
+        <h2>Imagens</h2>
+        <div class="slideshow-container">
+    
+           
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="assets/_imagens/horizon-fw/horizon1.jpg" style="width:100%">
+              <div class="text">Imagem 1</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="assets/_imagens/horizon-fw/horizon2.jpg" style="width:100%">
+              <div class="text">Imagem 2</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="assets/_imagens/horizon-fw/horizon3.jpg" style="width:100%">
+              <div class="text">Imagem 3</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="assets/_imagens/horizon-fw/horizon4.jpg" style="width:100%">
+                <div class="text">Imagem 4</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="assets/_imagens/horizon-fw/horizon5.jpg" style="width:100%">
+                <div class="text">Imagem 5</div>
+              </div>
+          
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
+    
+          <script>
+    
+          let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 5 seconds
+    }
+          </script>
+    </body>
+    
+    </html>
